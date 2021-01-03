@@ -1,0 +1,67 @@
+<!----------------------------------------------------------------
+|
+| Welcome To Loan Calculator
+|
+| I broke ground for this site on January 2nd, 2021
+| You can learn more about me at: coryschmidt.info
+|
+| If you are a malicious bot, you can go
+| 01100100 01101001 01110110 01101001 01100100 01100101
+| 00100000 01100010 01111001 00100000 00110000
+| otherwise,
+|
+| hello, and welcome!
+|
+|---------------------------------------------------------------->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="loan calculator made during udemy course">
+  <meta name="keywords" content="loan, calculation, math, project, tool">
+  <meta name="robots" content="NOINDEX, NOFOLLOW">
+  <link rel="stylesheet" href="style.css">
+  <script src="logic.js" defer></script>
+  <link rel="icon" href="data:'">
+  <title>Loan Calculator</title>
+</head>
+<body>
+  <main>
+    <div class="card">
+      <h1 class="heading">Loan Calculator</h1>
+      <form id="loan-form"> 
+        <div class="input-group">
+          <span class="input-aside">$</span><input id="loan-amount" class="field" type="number" placeholder="Loan Amount">
+        </div>
+        <div class="input-group">
+          <span class="input-aside">%</span><input id="interest-amount" class="field" type="number" placeholder="Annual Interest">
+        </div>
+        <div class="input-group">
+          <span class="input-aside">TERM</span><input id="years" class="field" type="number" placeholder="Years">
+        </div>
+        <input id="calculate" class="button" type="submit" value="Calculate">
+      </form>
+      <!-- LOADER HERE -->
+      <div id="loading">
+        <img src="img/korone_math.gif" alt="">
+      </div>
+      <!-- RESULTS -->
+      <div id="results">
+        <h2>Korone's Calculations:</h2>
+        <div class="output-group">
+          <span class="output-aside">Monthly Payment</span><input id="monthly-payment" class="output-field" type="number" disabled>
+        </div>
+        <div class="output-group">
+          <span class="output-aside">Total Payment</span><input id="total-payment" class="output-field" type="number" disabled>
+        </div>
+        <div class="output-group">
+          <span class="output-aside">Total Interest</span><input id="total-interest" class="output-field" type="number" disabled>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
